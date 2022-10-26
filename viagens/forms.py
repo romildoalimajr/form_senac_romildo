@@ -6,3 +6,4 @@ class ViagemForms(forms.Form):
     destino = forms.CharField(label = 'Destino', max_length = 100)
     data_ida = forms.DateField(label = 'Ida', widget = DatePicker())
     data_volta =forms.DateField(label = 'Volta', widget = DatePicker())
+

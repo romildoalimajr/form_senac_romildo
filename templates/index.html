@@ -1,13 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 
-    <section class="container">
-        <h1>Viagens com Desconto</h1>
-        <form action="{% url 'consulta' %}" method="post">
+    
+<section class="col-6">
+    <form action="{% url 'consulta' %}" method="post">
             {% csrf_token %}
             {{ form }}
         <input type="submit" value = "Enviar" class="btn btn-success">
-        </form>
-    </section>
+    </form>
+</section>
+    
 
 {% endblock %}
